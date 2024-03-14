@@ -1,0 +1,81 @@
+1) STATEMENT :
+Write a blog on difference between document & window objects
+
+   OUTPUT : 
+Document Object:
+
+The document object represents a web page that is loaded in the browser. 
+
+By accessing the document object, we can access the element in the HTML page.
+ 
+With the help of document objects, we can add dynamic content to our web page. 
+
+The document object can be accessed with a window.document or just document.
+
+Each HTML document ( or any other type of document like XML) which is sent by the server in response to a client request 
+and loaded into a window is a document object. Document contains the content of a webpage displayed in a window.
+
+The document object resides within the Window object, so document is a property of window object.
+
+The document is loaded after the window and it contains the contents of the webpage.
+
+The document object contains properties like URL, title, contentType, documentElement etc.
+
+The document object is very significant as we can manipulate the content of a webpage using document object properties, 
+in DOM (Document object model), document is the root element.
+
+In DOM, all HTML elements(say <p> <h1> <h3> etc for  HTML ducments) are defined as objects. We can access these elements and
+also changes the
+
+Some important properties and methods of document object are as follows : 
+-- document.documentElement : returns the root element of the document.
+-- document.doctype : gives the type of document declared, say HTML or XML or SVG etc 
+-- document.getElementById() : the method is commonly used to access an element of an document using the id of element.
+-- document.getElementById().innerHTML: innerHTML property can be used to get or change any HTML element
+-- document.childElementCount : gives the number of child elements 
+
+ In Document object Model, we can find elements, create or update element, set values to an element, delete or replace elements. 
+We can do this using the properties and methods of a document object. 
+
+Window Object:
+
+The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. 
+Whenever a window appears on the screen to display the contents of the document, the window object is created.
+
+Window object is at the Top of the hierarchy and is the outmost element of the object hierarchy.
+That is, Window is the parent object of all other objects including document, screen, console etc.
+ex. Each tab displaying a certain webpage in a browser is considered a window object.
+
+Window refers to the browser window(tab) in which a webpage content is displayed. Window is the first to get loaded into a 
+brpwser and window object contains information about the window such as, 
+-- width and height of a window, 
+-- the type of device in which the window is opened,
+-- scrollbars 
+-- screen size etc.
+
+There are many important window object properties such as,
+closed: window.closed returns a boolean value representing whether window is closed.
+
+console : It is an object in window that provides methods for logging information to the browser's console. 
+          ex. log() is a method in console object. This is mainly used for debugging not for the user.
+          window.console.log("hi") // Output: hi 
+
+history :  provides an interface for manipulating the browser session history 
+           history has methods such as go(), back(), forward(), pushState() etc 
+           window.history.go(-1);  // loads the previously loaded webpage in this window, ie.pressing back button
+
+location : This property gives information about the current location ( webpage) 
+           window.location  // gives information about the webpage displayed in current tab/window
+
+document, screen, frames, menubar , navigator are some other important properties of window object. 
+
+Window properties are accessed using the global variable window. Using this variable "window" we access all objects and 
+functions residing in it. ex. window.document.URL, window.screen 
+
+Window object also contains important methods such as, 
+print() - opens a Print dialog box to print the current webpage
+alert() - displays an alert message ex. window.alert("hi") // an alert box displays the message "hi"
+resizeTo() - resize the window 
+scroll() - scroll to top or left or any x,y co-ordinates. 
+
+<iframe> tags in HTML are treated as a separate window within a window.

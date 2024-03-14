@@ -1,0 +1,5 @@
+Question 1 : Create resume data in JSON format
+
+Question 2 : For a given JSON, iterate over all for loops (for, for in, for of, forEach)
+
+        

@@ -1,0 +1,81 @@
+1) STATEMENT :
+Write a blog on difference between HTTP1.1 vs HTTP2
+
+   OUTPUT :
+
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes
+
+One of the most significant difference between HTTP 1.1 and 2.0 is binary framing layer.This is the part of application layer stack. 
+
+HTTP/2 allows developers to customize prioritization, or the order in which web assets load. HTTP/2 offers a number of other performance improvements over HTTP/1 as well.
+
+HTTP-1.1,keeps all requests and responses in plain text format while HTTP-2.0 uses the binary framing layer to encapsulate all messages in binary format 
+
+The conversion of messages into binary allows HTTP/2 to try new approaches to data delivery not available in HTTP/1.1,
+
+In HTTP/2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1.
+
+The other differences between HTTP/2 and HTTP/1.1 that impact performance are Multiplexing ,Server push , Header compression
+
+Multiplexing: 
+HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. 
+In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. 
+HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+Server push: 
+Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. 
+HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. 
+The server also sends a message letting the client know what pushed content to expect before sending the whole thing.
+
+Header compression:
+Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller. 
+However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 
+This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+
+2) STATEMENT :
+Write a blog about objects & its internal representation in javascript
+
+   OUTPUT :
+The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. 
+
+Objects can be created using the Object() constructor or the object initializer / literal syntax.
+
+In JavaScript, almost "everything" is an object.
+Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed
+
+The Object class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities.
+
+A JavaScript object is a collection of named values and the named values, in JavaScript objects, are called properties.
+
+All JavaScript values, except primitives, are objects.
+
+To begin with let us understand the difference between primitive
+types and objects
+
+JavaScript defines 5 types of primitive data types:
+
+string , number, boolean , null , undefined
+
+Booleans can be objects (if defined with the new keyword)
+Numbers can be objects (if defined with the new keyword)
+Strings can be objects (if defined with the new keyword)
+Dates are always objects
+Maths are always objects
+Regular expressions are always objects
+Arrays are always objects
+Functions are always objects
+Objects are always objects
+
+JavaScript variables can contain single values
+
+Primitive values are immutable (they are hardcoded and therefore cannot be changed).
+
+Objects are variables too. But objects can contain many values.
+
+Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. 
+These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+
+
+
