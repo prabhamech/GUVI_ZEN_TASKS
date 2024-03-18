@@ -1,0 +1,34 @@
+
+body{           
+    text-align: center;
+    background-image: linear-gradient(to  right, rgb(17, 16, 16), rgb(17, 16, 16), rgb(17, 16, 16));
+} 
+body p{
+    color: rgb(250, 11, 11); 
+    font-size: larger;
+}
+#table{
+    color: rgb(94, 200, 24);        
+}
+#buttons-num{
+    background-color: transparent;
+} 
+#tbody{
+    font-size: large;
+    font-weight: 500;
+    font-style: oblique;
+    text-shadow: none;
+}
+button:active{
+    background-color: aqua;
+}
+#buttons button[class="active"]{
+background-color: rgb(36, 223, 15);
+}
+#page-btn button{
+    border: 1px 1px rgba(17, 17, 17, 0.767);
+    border-radius: 20%;
+}
+#page-btn{
+    gap: 3px;
+}
